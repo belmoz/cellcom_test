@@ -1,0 +1,35 @@
+.filter-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+  .filter-main {
+    flex-direction: column;
+  }
+}
+.filter-main__item {
+  margin: 0px 20px 0px 0px;
+  padding: 10px 20px;
+  transition: all 0.3s ease 0s;
+}
+.filter-main__item:has(.active) {
+  background-color: rgb(219, 219, 219);
+}
+.filter-main__item:hover {
+  background-color: rgb(230, 230, 230);
+}
+@media (max-width: 768px) {
+  .filter-main__item {
+    padding: 15px 50px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+.filter-main__link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #032541;
+}
+
+/*# sourceMappingURL=filter.css.map */
